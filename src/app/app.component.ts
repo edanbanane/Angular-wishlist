@@ -18,8 +18,9 @@ export class AppComponent {
   title = 'wishlist';
 
   addNewWish() {
-    this.items.push(new WishItem(this.newWishText));
-    this.newWishText = '';
+    this.items.push(new WishItem(this.newWishText)); // add wish to items array
+    this.newWishText = ''; // clear the textbox
+    // important de setter un name propertie pour le input de form
   }
 
   toggleItem(item : WishItem) {
