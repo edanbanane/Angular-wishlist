@@ -35,8 +35,4 @@ export class AppComponent {
     // important de setter un name propertie pour le input de form
   }
 
-  toggleItem(item : WishItem) {
-    item.isComplete = !item.isComplete;
-    console.log(item);
-  }
 }
