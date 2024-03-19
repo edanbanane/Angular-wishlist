@@ -13,10 +13,6 @@ export class AppComponent {
     new WishItem('Find grass that cuts itself')
   ];
 
-  filter : any = () => {}; //Initialise comme une fonction vide
-
-  get visibleItems() : WishItem[] {
-    return this.items.filter(this.filter);
-  }; // initialise with Item array
-
+  filter : any; //Initialise comme une fonction vide
+  
 }
